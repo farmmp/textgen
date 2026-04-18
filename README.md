@@ -77,6 +77,14 @@ See the [API documentation](docs/API.md) for details.
 
 Extensions can be loaded with `--extensions extension_name`. See the `extensions/` directory for available extensions and the [extension guide](docs/Extensions.md) for writing your own.
 
+## My Setup
+
+I run this locally on an RTX 3080 with the following command:
+
+```bash
+python server.py --model mistral-7b-instruct --api --listen --port 7860
+```
+
 ## Contributing
 
 Pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
