@@ -82,8 +82,10 @@ Extensions can be loaded with `--extensions extension_name`. See the `extensions
 I run this locally on an RTX 3080 with the following command:
 
 ```bash
-python server.py --model mistral-7b-instruct --api --listen --port 7860
+python server.py --model mistral-7b-instruct --api --listen --port 7860 --n-gpu-layers 35
 ```
+
+> Note: `--n-gpu-layers 35` offloads 35 layers to the GPU which works well for my 10GB VRAM budget with mistral-7b.
 
 ## Contributing
 
